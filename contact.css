@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url(home.png);
+    transition: background-color 0.5s ease;
+    background: #7eb67e;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    backdrop-filter: blur(30px);
+    background-color: #2d6d28;
+}
+
+.Logo {
+    font-size: 1.7em;
+   color: rgb(39, 60, 22);
+    user-select: none;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: rgb(3, 81, 15);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+  }
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 2px;
+    background: rgb(100, 46, 46);
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.deskripsi {
+    height: 100vh;
+    padding: 0 10%;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: -185px;
+}
+
+.deskripsitext {
+    max-width: 800px;
+    height: 100vh;
+    padding: 0 10%;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: -265px;
+}
+
+.deskripsitext h1 {
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: -50px;
+    margin-left: -10px;
+    color: rgb(11, 31, 13);
+}
+
+.deskripsitext p {
+    margin-top: 10px;
+    font-size: 20px;
+    margin-left: -5px;
+    color: rgb(241, 227, 227);
+}
+
+span{
+    color: rgb(42, 101, 20);
+}
+
+.home-logo {
+    height: 220px;
+    position: absolute;
+    bottom: 50px;
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: -250px;
+}
+
+.home-logo a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    background: transparent;
+    border: 2px solid rgb(45, 118, 84);
+    border-radius: 50%;
+    font-size: 80px;
+    color: rgb(40, 102, 17);
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+     
+}
+
+.home-logo a:hover {
+    color: rgb(169, 65, 21);
+}
+
+.home-logo a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(127, 54, 54);
+    z-index: -1;
+    transition: .5s;
+}
+
+.home-logo a:hover::before {
+ width:100%;
+}
+
+.home-gelap{
+    position:absolute;
+    top: 0;
+    right: 30px;
+    width: 500px;
+    height: 100%;
+    background: transparent;
+    transition: 3s;
+}
+
+.home-gelap:hover{
+    background: white;
+    opacity: 8s;
+}
+
+footer {
+    background-color: transparent;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
